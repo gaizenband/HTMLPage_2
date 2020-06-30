@@ -1,0 +1,430 @@
+$image-size: 323px;
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.wrapper{
+	max-width: 1280px;
+	height: auto;
+	margin: 0 auto;
+    display: flex;
+}
+
+.container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.page_header {
+    font-size: 30px;
+    line-height: 36px;
+    color: #445161;
+    margin-bottom: 15px;
+}
+
+.centralize {
+    text-align: center;
+}
+
+.page_text {
+    font-size: 16px;
+    color: #333333;
+}
+
+.header {
+    min-height: 323px;
+    background-color: #445161;
+    padding-bottom: 10px;
+
+    .header_data {
+        padding-top: 24px;
+        justify-content: space-between;
+        
+        .main_page_text {
+            color: rgb(255, 255, 255);
+            text-align: left;
+            font-size: 60px;
+        }
+    }
+
+    
+
+    .success {
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+    }
+
+    .header_list {
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 36px;
+        list-style: none;
+    }
+
+    .header_li {
+        padding-bottom: 10px;
+        vertical-align: middle;
+    }
+
+    .header_img {
+        width: $image-size;
+    }
+
+    .dogo {
+        padding-top: 25px;
+    }
+}
+
+.billboard {
+    margin-top: 50px;
+    margin-bottom: 65px;
+    
+    .billboard_data {
+        justify-content: space-between;
+    }
+
+    .billboard_info {
+        width: 679px;
+    }
+
+    .billboard_text {
+        margin-bottom: 10px;
+        line-height: 24px;
+    }
+
+    .billboard_img {
+        width: 323px;
+    }
+}
+
+.features {
+    margin-bottom: 50px;
+    padding-top: 25px;
+    background-color: #f2f3f4;
+
+    .features_data {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .feature {
+        max-width: 556px;
+        margin-bottom: 26px;
+    }
+
+    .details_exp {
+       display: flex;
+    }
+
+    .paw {
+        align-self: center;
+        padding: 7px;
+    }
+
+    .feature_text {
+        line-height: 20px;
+    }
+}
+
+.screenshots {
+    min-height: 400px;
+    margin-bottom: 50px;
+
+    .screenshots_data {
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .screenshot {
+        width: 575px;
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .screenshot_text {
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+
+        .screenshot_heading {
+            font-size: 24px;
+            color: #445161;
+            padding-bottom: 20px;
+        }
+
+        .screenshot_p {
+            line-height: 24px;
+        }
+    }   
+}
+
+.reviews {
+    margin-bottom: 50px;
+    padding-top: 25px;
+    background-color: #f2f3f4;
+
+    .reviews_data {
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .review {
+        width: 575px;
+        display: flex;
+        margin-bottom: 30px;
+    }
+    
+    .icon {
+        align-self: flex-start;
+    }
+
+    .quotebox {
+        background-color: #DCDCDC;
+        margin-left: 30px;
+
+        .review_text {           
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            .review_quote {
+                padding: 10px 10px 0 10px;
+            }
+    
+            .review_p {
+                font-size: 14px;
+                line-height: 18px;
+                color: #333333;
+                padding-bottom: 10px;
+                font-style: italic;
+            }
+    
+            .reviewer {
+                font-size: 14px;
+                line-height: 18px;
+                color: #989898;
+            }
+        }   
+    }
+
+    .review_text::after {
+        border-color: transparent #DCDCDC transparent transparent;
+        border-style: solid;
+        border-width: 10px;
+        bottom: 80px;
+        content: " ";
+        display: inline-block;
+        right: 100%;
+        position: relative;
+        margin-bottom: -15px; 
+    }
+}
+
+.buy_it_now {
+
+    .buy_data {
+        align-items: flex-end;
+        justify-content: space-around;
+        min-height: 525px;
+        flex-wrap: wrap;
+        max-width: 1080px;
+
+        .card {
+            background: #445161;
+            width: 300px;
+            border: 3px solid #445161;
+            border-radius: 5px;
+            margin: 10px;
+
+            .card_header {
+                font-size: 24px;
+                line-height: 30px;
+                color: #FFFFFF;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .cost {
+                background-color: #fff;
+                font-size: 40px;
+                line-height: 30px;
+                color: #445162;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .description {
+                margin: 10px;
+                
+                .buy_li {
+                    list-style-position: inside;
+                    margin: 0 5px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                }
+            }
+
+            .buy_btn {
+                display: block;
+                padding: 15px;
+                background: #FFFFFF;
+                color: #445162;
+                margin: 20px;
+                border-radius: 10px;
+                text-align: center;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.footer {
+    background: #445161;
+    min-height: 500px;
+    margin-top: 50px;
+
+    .footer_header {
+            color: #fff;
+            padding-top: 30px;
+        }
+
+    .footer_data {
+        align-content: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 900px;
+
+        .footer_form {
+            display: flex;
+            flex-direction: column;
+            margin-right: 100px;
+
+            .footer_input {
+                font-size: 20px;
+                padding: 10px;
+                border-radius: 10px;
+                margin: 10px;
+                width: 500px;
+                outline: none;
+            }
+
+            .footer_submit {
+                text-transform: uppercase;
+                width: 142px;
+                height: 42px;
+                align-self: center;
+                margin-bottom: 15px;
+                margin-top: 5px;
+                border-radius: 5px;
+                outline: none;
+                border: 0;
+
+                .submit_txt {
+                    margin: 10px 20px;
+                }
+            }
+        }
+
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .social_contacts {
+            margin-bottom: 20px;
+            display: flex;
+            
+            .contacts_icon {
+                align-self: center;
+            }
+    
+            .contacts_text {
+                align-self: center;
+                padding-left: 5px;
+                font-size: 16px;
+            }
+        }
+
+        .social_btns {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }   
+    }    
+}
+
+@media (max-width:1024px) {
+
+    .header {
+    
+        .main_page_text {
+            text-align: center;
+        }
+
+        .header_img {
+            display: none;
+        }
+    }
+    
+    
+    .footer {
+        .footer_data {
+            .footer_form {
+                margin-right: 0;
+
+                .footer_input {
+                    margin: 0;
+                    margin-bottom: 5px;
+                }
+            }
+
+            .contacts {
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+        .header_data {   
+            .main_page_text {
+                font-size: 50px;
+                text-align: center;
+            }
+        }
+    }
+
+    .srn_fit {
+        display: none;
+    }
+
+    .billboard {
+        .billboard_img {
+            display: none;
+        }
+    }
+
+    .reviews {
+        .review_text::after {
+            content: none;
+        }
+    }
+    
+    .footer {
+        .footer_data {
+            .footer_form {
+                .footer_input {
+                    width: 300px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
